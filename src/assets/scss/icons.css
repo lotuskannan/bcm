@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?zfrulu");
+  src: url("../fonts/icomoon.eot?zfrulu#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?zfrulu") format("truetype"), url("../fonts/icomoon.woff?zfrulu") format("woff"), url("../fonts/icomoon.svg?zfrulu#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-upload:before {
+  content: "\e900";
+  color: #c2c2c2;
+}
+
+.icon-team:before {
+  content: "\e901";
+}
+
+.icon-star:before {
+  content: "\e902";
+}
+
+.icon-search:before {
+  content: "\e903";
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.icon-red_Arrow_Down:before {
+  content: "\e904";
+  color: #e01212;
+}
+
+.icon-print:before {
+  content: "\e905";
+}
+
+.icon-password:before {
+  content: "\e906";
+}
+
+.icon-noun_Arrow-Down_2022881:before {
+  content: "\e907";
+  color: #757575;
+}
+
+.icon-notes:before {
+  content: "\e908";
+  color: #c7d5ff;
+}
+
+.icon-loupe:before {
+  content: "\e909";
+  color: #fff;
+}
+
+.icon-logo-white:before {
+  content: "\e90a";
+  color: #fff;
+}
+
+.icon-logo:before {
+  content: "\e90b";
+}
+
+.icon-green_Arrow_Down:before {
+  content: "\e90c";
+  color: #4abf21;
+}
+
+.icon-expand:before {
+  content: "\e90d";
+  color: #bebebe;
+}
+
+.icon-edit-white:before {
+  content: "\e90e";
+  color: #fff;
+}
+
+.icon-delete:before {
+  content: "\e90f";
+}
+
+.icon-coronavirus-covid19:before {
+  content: "\e910";
+}
+
+.icon-bell:before {
+  content: "\e911";
+  color: #6f6f6f;
+}
+
+.icon-avatar:before {
+  content: "\e912";
+}
+
+.icon-expand1:before {
+  content: "\e913";
+  color: #bebebe;
+}
+/*# sourceMappingURL=icons.css.map */

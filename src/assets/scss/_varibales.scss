@@ -1,0 +1,40 @@
+// color
+$gray-color : #B7B7B7;
+$darkGray-color: #757575;
+$red-color : #F81313;
+$liteBlue-color : #89CBFE;
+$darkBlue-color: #63799B;
+$green-color:#4ABF21;
+$orange-color: #FF8500;
+$font-color:#757575;
+$redFont-color:#E59C9C;
+$white-color:#ffffff;
+$gray-text: #3D3D3D;
+$lite-green: #04A18C;
+$brown-color : #9E042E;
+$shadow: 2px 6px 17px #0000003B;
+$inActive: #2f2a2a;
+
+.warning-color
+{
+    color: $orange-color;
+}
+.success-color 
+{
+    color: $green-color;
+}
+.error-color 
+{
+    color: $red-color !important;
+}
+.green-text-color 
+{
+    color: #82AD2A !important;
+}
+.blue-text-color 
+{
+    color: #729FE5 !important;
+}
+
+
+

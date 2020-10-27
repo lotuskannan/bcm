@@ -1,0 +1,105 @@
+.error-msg {
+  color: #f00000;
+}
+
+.login-container {
+  height: 100vh;
+}
+
+.login-container .container {
+  height: 100%;
+}
+
+.login-container .container .row {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-logo {
+  text-align: center;
+  margin: 0 0 18vh;
+}
+
+.login-container .login-form {
+  padding: 0 4rem;
+}
+
+.login-container .login-form .form-group {
+  position: relative;
+}
+
+.login-container .login-form .form-group .form-control {
+  border: 0 none;
+  border-bottom: 1px solid #848484;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.login-container .login-form .form-group .form-control:focus {
+  border-bottom: 1px solid #212529;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login-container .login-form .form-group .input-icon {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  opacity: .2;
+}
+
+.login-container .login-form .form-group .input-icon img {
+  width: 24px;
+}
+
+.login-container .login-form .form-group .input-icon.pwd img {
+  height: 26px;
+}
+
+.login-container .login-form .login-btn {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.login-container .login-form .login-btn .btn {
+  text-transform: uppercase;
+  padding: 0.5rem 5rem;
+  border-radius: .5rem;
+}
+
+.login-container .login-form .login-btn .btn-primary {
+  color: #fff;
+  background-color: #141414;
+  border-color: #141414;
+}
+
+.login-container .login-form .login-btn .btn-primary:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.login-container .login-form .login-btn .btn-primary.focus, .login-container .login-form .login-btn .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.login-container .login-form .powered-by {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.login-container .login-form .powered-by p {
+  color: #4c4c4c;
+  font-size: .85rem;
+  margin: 0 0 .5rem;
+}
+
+.login-container .login-form .powered-by img {
+  height: 28px;
+  margin-top: .1rem;
+}
+/*# sourceMappingURL=login.css.map */

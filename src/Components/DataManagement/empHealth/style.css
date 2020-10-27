@@ -1,0 +1,9 @@
+.empName .rbt-input::placeholder {
+    color: #222222 !important;
+}
+.icon-sort img{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: .8;
+    height: 18px;    
+}

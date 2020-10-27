@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+@import "assets/scss/login.scss";
+@import "assets/scss/header.scss";
+@import "assets/scss/sidebar.scss";
+@import "assets/scss/common.scss";
+@import "assets/scss/dashboard.scss";
+@import "assets/scss/employee-health.scss";
+@import "assets/scss/cleansanitization.scss";
+@import "assets/scss/training-awareness.scss";
+@import "assets/scss/courseDetails.scss";
+@import "assets/scss/shiftManagement.scss";
+@import "assets/scss/dataManagement.scss";
+@import "assets/scss/varibales.scss";
+@import "assets/scss/news.scss";
+@import "assets/scss/onsite-survey.scss";
+@import "assets/scss/icons.scss";
+@import "assets/scss/customTable.scss";
+@import "assets/scss/role-management.scss";
+@import "assets/scss/datepicker.scss";
+@import "assets/scss/alert.scss";
+body {
+    font-family: 'Lato', sans-serif;
+}

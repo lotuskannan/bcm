@@ -1,0 +1,184 @@
+
+@import "varibales";
+@import "mixin";
+
+// Sidebar
+#sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: calc(100% - 100px);
+    background: #171717;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    @include breakpoint(tablet-port)
+    {
+        height: calc(100% - 80px) !important;
+        left: -75px !important;
+        background: rgba(0, 0, 0, 0.79);
+        z-index: 999999999999;
+        &.active {
+            left: 0px !important;
+        }
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        @include breakpoint(tablet-port)
+        {
+           padding: 0 !important;
+        }
+        ul {
+            margin: 0;
+
+            li {
+                a {
+                    display: flex;
+                    padding: 10px 8px;
+                    margin: 0px;
+                    font-size: 2em;
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 4px;
+                        height: 100%;
+                        background: #50dfbf;
+                        // background: linear-gradient(170deg, #3EB662 0%, #010101);
+                        display: none;
+                    }
+
+                    span {
+                        border-radius: 50%;
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        background: #4B4B56;
+                        align-items: center;
+                        justify-content: center;
+
+                        &.have-icon {
+                            background: none;
+                        }
+
+                        img {
+                            height: 32px;
+                            opacity: .7;
+                        }
+                    }
+
+                    &:hover,
+                    &.active {
+                        background: #131313;
+                        // background: #010101;
+                    }
+
+                    &.active {
+                        &:before {
+                            display: block;
+                        }
+
+                        span {
+                            img {
+                                opacity: 1;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    @media screen and (max-width:1200px) {
+        .menu {
+            ul {
+                li {
+                    a {
+                        span {
+                            width: 40px;
+                            height: 40px;
+
+                            img {
+                                height: 34px;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        left: 0;
+        width: 70px;
+        height: 100%;
+        transition: left .3s ease;
+        // height: calc(100% - 79px)!important;
+        &.open {
+            left: 0;
+        }
+
+        .menu {
+            padding: 50px 0 0;
+
+            ul {
+                margin: 0;
+
+                li {
+                   
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    a {
+                        margin: 8px 0;
+                        width: 100%;
+                        padding: 0px;
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:565px) {
+
+        .menu {
+            ul {
+
+                li {
+                    a {
+                        span {
+                            width: 35px;
+                            height: 35px;
+
+                            img {
+                                height: 30px;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}

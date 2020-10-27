@@ -1,0 +1,9 @@
+.dialog-date-picker .open .selected-date{
+    color: #1D2634 !important;
+}
+.react-google-flight-datepicker .dialog-date-picker.open .date:nth-child(1) .selected-date{
+    color: #1D2634 !important;
+}
+.dialog-date-picker .hide .selected-date{
+    color: #f4f4ff !important;
+}

@@ -1,0 +1,13 @@
+.react-timekeeper__tb-hour, .react-timekeeper__tb-minute, .react-timekeeper__tb-colon {
+  font-size: 2rem !important;
+}
+
+.react-timekeeper__top-bar {
+  padding: 5px 16px 0 !important;
+}
+
+.react-timekeeper, .custom-timekeeper .closeBtn {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+/*# sourceMappingURL=datepicker.css.map */

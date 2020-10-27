@@ -1,0 +1,267 @@
+#roleManagementContainer, #addNewRoleModel  {
+    .roles-container {
+        background-color: #ffffff;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px 3px 6px #00000029;
+        @media(max-width: 1199px)
+        {
+            height: auto;
+        }
+        @media(max-width : 900px)
+        {
+            
+            .roles-title, .role-container {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+        }
+        .roles-title {
+            flex: 0 0 25%;
+            max-width: 25%;
+            background-color: #F3F3F3;
+            height: 100%;
+            @media(max-width : 900px)
+            {
+                .roles-title-list 
+                {
+                    display: flex;
+                    align-items: center;
+                    li 
+                    {
+                        padding: .8rem 1rem .8rem 2.3rem !important;
+                        &::before,
+                        &::after {
+                            left: 1.4rem !important;
+                            width: 11px !important;
+                        }
+                        &:last-child 
+                        {
+                            border-bottom: 1px solid rgba(0, 0, 0, .2) !important;
+                        }
+                    }
+                }
+        
+            }
+            .roles-title-list {
+                padding-left: 0;
+                height: 100%;
+                height: calc(100%);
+                overflow: auto;
+                margin-bottom: 0;
+                @include scrollbar();
+                li {
+                    list-style: none;
+                    font-size: 1.2rem;
+                    padding: .8rem .5rem .8rem 4rem;
+                    border-bottom: 1px solid rgba(0, 0, 0, .2);
+                    &:last-child 
+                    {
+                        border-bottom: none;
+                    }
+                    position: relative;
+                    cursor: pointer;
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 2rem;
+                        border-bottom: 1px solid rgba(0, 0, 0, .2);
+                        width: 21px;
+                        height: 1px;
+                        transform: translateX(-50%);
+                    }
+
+                    &::before {
+                        top: calc(50% - 2px);
+                    }
+
+                    &::after {
+                        top: calc(50% + 2px);
+                    }
+                    &.active 
+                    {
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .role-container {
+            flex: 0 0 75%;
+            max-width: 75%;
+            height: 100%;
+            padding-top: 2rem;
+            position: relative;
+            .form-control {
+                border-top: 0 !important;
+                border-left: 0 !important;
+                border-right: 0 !important;
+                border-radius: 0 !important;
+                border-color: #dee2e6;
+                padding-left: 0px;
+                color: #5A5A5A !important;
+                &::placeholder {
+                    color: rgba(104, 104, 104, 0.7);
+                }
+              
+            }
+
+           
+            .modal-btn {
+                text-align: right;
+                padding-right: 1rem;
+                position: absolute;
+                bottom: 1rem;
+                width: 100%;
+                border-top: 1px solid rgba(0, 0, 0, .4);
+                padding-top: 1rem;
+                @media(max-width: 1199px)
+                {
+                    position: relative;
+                    margin-top: 1rem;
+                }
+                .btn {
+                    background: #DBDBDB 0% 0% no-repeat padding-box;
+                    border: 1px solid #707070;
+                    border-radius: 7px;
+                    color: #393636;
+                    font-weight: 600;
+                    margin: 0 .5rem;
+                    font-size: 1rem;
+                    padding: .2rem 2.6rem;
+                }
+            }
+        }
+    }
+    .role-details {
+        height: 100%;
+        .row {
+            padding-left: 4rem;
+           @media(max-width: 1440px)
+           {
+            padding-left: 3rem;
+           }
+            padding-right: 0rem;
+            [class^='col-']
+            {
+                padding-bottom: 10px;
+            }
+            .role-name {
+                font-weight: 600;
+                font-size: 1.09rem;
+
+                .mandatory {
+                    color: red;
+                }
+            }
+
+            .form-group {
+                margin-bottom: 0;
+                
+            }
+            .action-btn 
+            {
+                margin-top: .9rem;
+            }
+            .checkbox-leave
+            {
+                margin-bottom: .8rem;
+                @media(max-width: 900px)
+                {
+                    margin-bottom: 0rem;
+                }
+                .checkbox-text 
+                {
+                    font-weight: 600;
+                    font-size: .98rem;
+                    @media(max-width: 1450px)
+                    {
+                        font-size: .9rem;
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+#addNewRoleModel 
+{
+    max-width: 790px;
+    .role-container 
+    {
+        margin-top: 0 !important;
+        padding-left: 3rem;
+        padding-right: 0rem;
+        .checkbox-text 
+        {
+            font-size: .92rem !important; 
+        }
+    }
+    .role-details  
+    {
+        .row {
+
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
+    }
+}
+#roleManagementContainer  
+{
+    .tableList 
+    {
+      @media(max-width: 1199px)
+      {
+        padding-bottom: 1rem;
+      }
+    }
+    .action-btn-container 
+    {
+        .action-btn 
+        {
+            opacity: .4;
+        }
+        @media(max-width: 767px) 
+        {
+            position: absolute;
+            right: 1rem;
+        }
+    }
+}
+#reportManagementTable 
+{
+    .react-bootstrap-table 
+    {
+        .table 
+        {
+            tbody tr td, thead  tr th
+            
+            {
+                
+                &:last-child 
+                {
+                    padding-right: .5rem !important;
+                    min-width: 180px;
+                    div 
+                    {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+                &:nth-child(5)
+                {
+                    min-width: 130px;
+                }
+            }
+            tbody tr td 
+            {
+                font-weight: 500;
+            }
+        }
+    }
+}

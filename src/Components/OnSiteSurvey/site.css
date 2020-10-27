@@ -1,0 +1,6 @@
+.preventmos{
+    pointer-events: none !important;
+}
+.btn-primary > input{
+    display: none !important;
+}
